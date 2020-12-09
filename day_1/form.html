@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Register</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1>Buat Acount Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html" method="POST">
+      <div>
+        <label>First name:</label><br>
+        <input type="text" name="firstName" />
+      </div><br>
+      <div>
+        <label>Last name:</label><br>
+        <input type="text" name="lastName" />
+      </div><br>
+      <div>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender " value="male" /><label>Male</label><br/>
+        <input type="radio" name="gender " value="female" /><label>Female</label><br/>
+        <input type="radio" name="gender " value="male" disabled /><label>Other</label><br/>
+      </div><br>
+      <div>
+        <label>Nationality:</label><br>
+        <select name="nationality" >
+          <option>Indonesia</option>
+          <option>Malaysia</option>
+          <option>Singapura</option>
+          <option>Filiphina</option>
+        </select>
+      </div><br>
+      <div>
+        <label>Language Spoken</label><br>
+        <input type="checkbox" /><label>Bahasa Indonesia</label><br>
+        <input type="checkbox" /><label>English</label><br>
+        <input type="checkbox" /><label>Other</label><br>
+      </div><br>
+      <div>
+        <label>Bio:</label><br>
+        <textarea cols="30" rows="10" ></textarea>
+      </div><br>
+      <button>Submit</button>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>
