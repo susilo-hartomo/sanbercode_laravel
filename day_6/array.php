@@ -20,7 +20,7 @@
       Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
   */
   $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"); // Lengkapi di sini
-  $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
+  $adults = ["Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"];
   echo "<label>Kids in Array : </label><br>";
   printf(implode(", ", $kids));
   echo "<br><br><label>Adults in Array :</label><br>";
@@ -32,17 +32,16 @@
   */
   echo "Cast Stranger Things: ";
   echo "<br>";
-  echo "Total Kids: " . count($kids) . ""; // Berapa panjang array kids
+  echo "Total Kids: ", count($kids); // Berapa panjang array kids
   echo "<br>";
   echo "<ol>";
   echo "<li> $kids[0] </li>";
+  // Lanjutkan
   echo "<li> $kids[1] </li>";
   echo "<li> $kids[2] </li>";
   echo "<li> $kids[3] </li>";
   echo "<li> $kids[4] </li>";
   echo "<li> $kids[5] </li>";
-  // Lanjutkan
-
   echo "</ol>";
 
   echo "Total Adults: " . count($adults) . ""; // Berapa panjang array adults
@@ -80,12 +79,12 @@
             
         */
 
-  $users = array(
+  $users = [
     array("Name" => "Will Byers", "Age" => 12, "Aliases" => "Will the Wise", "Status" => "Alive"),
     array("Name" => "Mike Wheeler", "Age" => 12, "Aliases" => "Dungeon Master", "Status" => "Alive"),
     array("Name" => "Jim Hopper", "Age" => 43, "Aliases" => "Chief Hopper", "Status" => "Deceased"),
     array("Name" => "Eleven", "Age" => 12, "Aliases" => "El", "Status" => "Alive")
-  );
+  ];
 
   echo "<p>Users</p>";
   echo "<ol>";
